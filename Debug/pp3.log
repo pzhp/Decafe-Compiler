@@ -1,0 +1,61 @@
+﻿Build started 2014/4/25 17:13:10.
+     1>Project "F:\快盘\compiler\Decaf-Compiler\pp3.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\pp3.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         bison -dvty parser.y
+         conflicts: 58 shift/reduce
+         flex -d scanner.l
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ast.cc ast_decl.cc ast_expr.cc ast_stmt.cc ast_type.cc codegen.cc errors.cc lex.yy.c main.cc mips.cc tac.cc utility.cc windows.cc y.tab.c /D _CRT_SECURE_NO_WARNINGS 
+         y.tab.c
+     1>f:\快盘\compiler\decaf-compiler\y.tab.c(1155): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>f:\快盘\compiler\decaf-compiler\y.tab.c(1527): warning C4065: switch statement contains 'default' but no 'case' labels
+         windows.cc
+         utility.cc
+         tac.cc
+         mips.cc
+         main.cc
+         lex.yy.c
+     1>f:\快盘\compiler\decaf-compiler\scanner.l(62): warning C4101: 'curLine' : unreferenced local variable
+     1>f:\快盘\compiler\decaf-compiler\scanner.l(193): warning C4018: '>' : signed/unsigned mismatch
+         errors.cc
+         codegen.cc
+         ast_type.cc
+         ast_stmt.cc
+         ast_expr.cc
+         ast_decl.cc
+         ast.cc
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\pp3.exe.embed.manifest.res" Debug\pp3_manifest.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\快盘\compiler\Decaf-Compiler\Debug\pp3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\pp3.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\快盘\compiler\Decaf-Compiler\Debug\pp3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\快盘\compiler\Decaf-Compiler\Debug\pp3.lib" /MACHINE:X86 Debug\pp3.exe.embed.manifest.res
+         Debug\ast.obj
+         Debug\ast_decl.obj
+         Debug\ast_expr.obj
+         Debug\ast_stmt.obj
+         Debug\ast_type.obj
+         Debug\codegen.obj
+         Debug\errors.obj
+         Debug\lex.yy.obj
+         Debug\main.obj
+         Debug\mips.obj
+         Debug\tac.obj
+         Debug\utility.obj
+         Debug\windows.obj
+         Debug\y.tab.obj
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\pp3.exe.embed.manifest" /manifest Debug\pp3.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         pp3.vcxproj -> F:\快盘\compiler\Decaf-Compiler\Debug\pp3.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\pp3.unsuccessfulbuild".
+         Touching "Debug\pp3.lastbuildstate".
+     1>Done Building Project "F:\快盘\compiler\Decaf-Compiler\pp3.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.25

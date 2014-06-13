@@ -1,0 +1,24 @@
+class Binky {
+   void Method() {}
+   int a;
+   void setdata(int x)
+   {
+	a= x;
+   }
+   int getdata()
+   {
+	return a;
+   }
+}
+
+void main() {
+  Binky d;
+   Binky a;
+ 
+  d = new Binky;
+  d.setdata(1);
+  a = new Binky;
+  a.setdata(2);
+  a = d;
+  Print(a.getdata());
+}

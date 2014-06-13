@@ -1,0 +1,63 @@
+
+class Animal {
+  int num1;
+   void Init(int n) { num1 = n; }
+
+	void Method1() {
+	    Print("Animal");
+	    PrintSelf();
+	  }	
+	  void PrintSelf()
+	{
+	    Print("num1 = ", num1, "\n");
+	}	
+}
+
+class Cow extends Animal {
+   void Method2() {
+      Print("Cow2");
+	Method1();
+   }
+   void Method1() {
+    Print("Cow");
+    PrintSelf();
+  }
+}
+
+class Jersey extends Cow {
+   void Method3() {
+	Print("Jersey3");
+      Method2();
+   }
+   void Method1() {
+      Print("Jersey");
+	PrintSelf();
+   }
+}
+
+class Barn
+{
+   void AddCow(Cow cow) {
+	  cow.Method1();
+    }
+}
+
+
+void main() {
+  Cow a;
+
+  Barn b;
+
+
+  b = new Barn;
+  a = new Cow;
+  a.Init(24);
+ 
+  b.AddCow(a);
+}
+
+
+
+
+
+
